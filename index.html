@@ -1,0 +1,679 @@
+<!DOCTYPE html>
+<html lang="ko">
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1">
+    <meta http-equiv="X-UA-Compatible" content="ie=edge" />
+    <title>J PORTFOLIO</title>
+
+    <link rel="stylesheet" href="https://maxcdn.bootstrapcdn.com/bootstrap/3.3.7/css/bootstrap.min.css">
+    <link rel="stylesheet" href="css/reset.css">
+    <link rel="stylesheet" href="css/font.css">
+    <link rel="stylesheet" href="css/jquery.bxslider.css">
+    <link rel="stylesheet" href="css/index.css">
+    <link rel="stylesheet" href="css/button.css">
+    <link rel="stylesheet" href="https://maxcdn.bootstrapcdn.com/font-awesome/4.7.0/css/font-awesome.min.css">
+
+    
+    <script src="https://ajax.googleapis.com/ajax/libs/jquery/3.3.1/jquery.min.js"></script>
+    <script src="https://maxcdn.bootstrapcdn.com/bootstrap/3.3.7/js/bootstrap.min.js"></script>
+
+    <!--즐겨찾기 파비콘(FAVorites ICON): .png .ico-->
+    <link rel="shortcut icon" href="images/favicon/favicon.png">
+    <!--터치 아이콘 : 모바일 디바이스로 사이트 접속 후 홈화면에 추가시 생기는 아이콘-->
+    <link rel="apple-touch-icon-precomposed" href="images/favicon/mfavicon.png">
+    
+    <script src="https://code.jquery.com/jquery-1.12.4.min.js"></script>
+	<script src="https://code.jquery.com/jquery-3.3.1.min.js"></script>
+    <script src="js/template.js"></script>
+	
+</head>
+<body>
+    
+    <div id="wrap">
+        <!--1. 헤더영역 시작-->
+        <header class="header cf">
+            <!--로고 시작-->
+            <a href="#"><h1 class="logo">
+                Portfolio By J
+            </h1></a>
+            <!--로고 끝-->
+            <!--GNB메뉴 시작-->
+            <nav>
+                <ul class="gnb">
+                   <li><a href="#about">About</a></li>
+					<li><a href="#work">Work</a></li>
+					<li><a href="#contact">Contact</a></li>
+                </ul>
+            </nav>
+            <!--GNB메뉴 끝-->
+            
+            <!--모바일 햄버거 메뉴시작-->
+            <span class="menu_toggle_btn">
+                <span></span>
+                <span></span>
+                <span></span>
+            </span>
+            <!--모바일 햄버거 메뉴끝-->
+        </header>
+        <!--1. 헤더영역 끝-->
+        
+        <!--2. 슬라이드영역 시작-->
+        <article class="slider">
+            <div class="slider_img">
+                <img src="images/p_images/slide01.png" alt="슬라이드 이미지">
+            </div>
+        </article>
+        <!--2. 슬라이드영역 끝-->
+        
+        <!--3. 콘텐츠영역 시작-->
+        <section class="content">
+            
+            <!--3-1. 디스플레이영역 시작-->
+            <section class="display_section container">
+                <div class="cf">
+                    <a name="about"><h2 class="sec_title">ABOUT</h2></a>
+					<p class="desc">
+						장지연, 1995.05.19 Seoul Nowon-Gu of Korea <br>
+                        덕성여자대학교 영어영문학과 졸업 <br>
+                        더조은아카데미 자바&빅데이터 과정 수료 <br>
+                        이젠아카데미 UI/UX 과정 수료
+                 	</p>
+                </div>
+            </section>
+            <!--3-1. 디스플레이영역 끝-->
+
+            
+            <!--3-2. 프로모션영역 시작-->
+            <section class="promotion_section container">
+                <div>
+                    <ul class="promotion_list cf">
+                        <li>
+                            <a>
+                               <img src="images/s_images/icon1.png" alt="아이콘">
+								<h3>Back-End</h3>
+								<p>
+									Python, Python django<br>
+									Java, Spring
+                                </p>
+                            </a>
+                        </li>
+                        
+                        <li>
+                            <a>
+                                <img src="images/s_images/icon2.png" alt="아이콘">
+								<h3>Front-End</h3>
+								<p>
+									HTML5, CSS3<br>
+									javascript, JQuery 
+                                </p>
+                            </a>
+                        </li>
+                        
+                        <li>
+                            <a>
+                                <img src="images/s_images/icon3.png" alt="아이콘">
+								<h3>Data</h3>
+								<p>
+									MySQL, Oracle DB <br>
+									PostgreSQL, sklearn
+                                </p>
+                            </a>
+                        </li>
+                        
+                        <li>
+                            <a>
+                                <img src="images/s_images/icon4.png" alt="아이콘">
+								<h3>ETC</h3>
+								<p>
+									git, GitHub, AWS<br>
+                               		Photoshop, Illustrator, XD
+                                </p>
+                            </a>
+                        </li>
+                        
+                    </ul>
+                </div>
+            </section>
+            <!--3-2. 프로모션영역 끝-->
+            
+
+        <hr class="divider">
+            
+            <!--3-3. 최근작업영역 시작-->
+            <section class="work_section container">
+                <div>
+                    <a name="work"><h2 class="sec_title">Work</h2></a>
+                    <ul class="work_list cf">
+
+                        <!-- li 1-->
+                        <li data-toggle="modal" data-target="#myModal">
+                            <a id="my-button">
+                                <div>
+                                    <h3>QnA 게시판</h3>
+                                    <span><strong>Web development</strong> <br>
+                                                                                
+                                    </span>
+                                </div>
+                               <img src="images/p_images/sec_work/sec_work_1.png" alt="사진">
+                            </a>   
+
+                        </li>
+
+                        <!-- Modal 1-->
+                        <div class="modal fade" id="myModal" role="dialog"> <!-- 사용자 지정 부분① : id명 -->
+                            <div class="modal-dialog modal-lg">
+                            <!-- Modal content-->
+                            <div class="modal-content">
+                                <div class="modal-header">
+                                <button type="button" class="close" data-dismiss="modal">×</button>
+                                <h4 class="modal-title">QnA 게시판 </h4> 
+                                </div>
+                                <div class="modal-body container">
+                                    <div class="row">
+                                        <div class='col-sm-6 con-text'>
+                                            <em>Web development</em>
+                                            <p>파이썬 장고를 사용하여 질문과 답변 게시판을 제작했습니다. <br>
+
+                                                서적을 참고하여 기본적인 게시판, 로그인, 로그아웃 기능과 <br>
+                                                페이징, 질문과 연동되는 답변과 댓글, 검색 기능 등을 구현하고, <br>
+                                                강의에는 없는 회원 정보 수정이나 비밀번호 변경 등의 기능을 <br>
+                                                추가하며 사이트를 개선했습니다.<br><br>
+            
+                                                또한 git과 github, 아마존 AWS를 학습해 적용하였습니다.<br><br>
+
+                                                이미지 클릭 시 해당 사이트로 이동합니다.</p>
+                                        </div>
+                                        <div class='col-sm-6'>
+                                            <a href="http://3.39.49.197/"><img src="images/p_images/sec_work/sec_work_12.png" alt="이미지"></a>
+                                            
+                                        </div>
+
+                                    </div>
+                                
+                                </div>
+                                <div class="modal-footer">
+                                <button type="button" class="btn btn-default" data-dismiss="modal">Close</button>
+                                </div>
+                            </div>
+                            </div>
+                        </div>
+                    
+                        <!-- li 2-->
+                        <li data-toggle="modal" data-target="#myModal2">
+                            <a id="my-button">
+                                <div>
+                                    <h3>맛집 추천 프로젝트</h3>
+                                    <span><strong>Web development & Data Analytics</strong> <br>
+                                                                                
+                                    </span>
+                                </div>
+                               <img src="images/p_images/sec_work/sec_work_2.png" alt="사진">
+                            </a>               
+                        </li>
+
+                        <!-- Modal 2-->
+                        <div class="modal fade" id="myModal2" role="dialog"> <!-- 사용자 지정 부분① : id명 -->
+                            <div class="modal-dialog modal-lg" >
+                            <!-- Modal content-->
+                            <div class="modal-content">
+                                <div class="modal-header">
+                                <button type="button" class="close" data-dismiss="modal">×</button>
+                                <h4 class="modal-title">맛집 추천 프로젝트 </h4> 
+                                </div>
+                                <div class="modal-body container">
+                                    <div class="row">
+                                        <div class='col-sm-6 con-text'>
+                                            <em>Web development & Data Analytics</em>
+                                            <p>
+                                                "맛집 추천", "코로나 이후 맛집 분포 변화" 라는 테마로 시작된 프로젝트 입니다.
+                                                팀 단위로 웹 개발과 데이터 분석을 동시에 진행하였으며, 데이터를 수집하고
+                                                분석해 시각화를 담당했습니다. 웹 개발자를 희망하면서도 데이터 분석팀에 참여한
+                                                이유는 데이터를 파악하는 법을 알아야 그에 적합한 서비스를 구현할 수 있다고
+                                                생각했기 때문입니다.<br><br>
+                                                
+                                                웹 크롤링과 공공 기관에서 제공하는 데이터를 모아 전처리 후, 벡터라이징을 통해
+                                                코사인 유사도 분석을 거쳐 추천 알고리즘을 만들고, matplotlib과 seaborn을
+                                                사용해 한 눈에 보이도록 시각화하였습니다.<br><br>
+
+                                                이미지 클릭 시 해당 사이트로 이동합니다.</p>
+                                        </div>
+                                        <div class='col-sm-6'>
+                                            <a href="http://132.226.173.241:8080/index.jsp"><img src="images/p_images/sec_work/sec_work_22.png" alt="이미지"></a>
+                                            
+                                        </div>
+
+                                    </div>
+                                
+                                </div>
+                                <div class="modal-footer">
+                                <button type="button" class="btn btn-default" data-dismiss="modal">Close</button>
+                                </div>
+                            </div>
+                            </div>
+                        </div>
+
+                        <!-- li 3-->
+                        <li data-toggle="modal" data-target="#myModal3">
+                            <a id="my-button">
+                                <div>
+                                    <h3>Power Up 프로모션</h3>
+                                    <span><strong>WEB Design & Publishing</strong> <br>
+                                                                                
+                                    </span>
+                                </div>
+                               <img src="images/p_images/sec_work/sec_work_3.png" alt="사진">
+                            </a>               
+                        </li>
+
+                        <!-- Modal 3-->
+                        <div class="modal fade" id="myModal3" role="dialog"> <!-- 사용자 지정 부분① : id명 -->
+                            <div class="modal-dialog modal-lg" >
+                            <!-- Modal content-->
+                            <div class="modal-content">
+                                <div class="modal-header">
+                                <button type="button" class="close" data-dismiss="modal">×</button>
+                                <h4 class="modal-title">Power Up 프로모션</h4> 
+                                </div>
+                                <div class="modal-body container">
+                                    <div class="row">
+                                        <div class='col-sm-6 con-text'>
+                                            <em>WEB Design & Publishing</em>
+                                            <p>
+                                                여름을 맞아 과거에 발매된 레드벨벳의 여름 싱글 앨범
+                                                'SUMMER MAGIC'을 테마로 공식 홈페이지를 리뉴얼하였습니다.<br><br>
+
+                                                바다를 떠올리게 하는 밝은 하늘색을 전면에 사용했으며, 흥미 유발을
+                                                위해 배경 중간에 뮤비의 장면들을 삽입했습니다.<br><br>
+
+                                                해외팬들의 유입이 많은 공식 홈페이지의 첫 화면이기에, 정보 전달만을
+                                                내세우는 대신 이미지와 뮤직비디오들을 주로 사용해 시각적인 면을 보다
+                                                강조하고 앨범의 트랙리스트를 노출시켰습니다.<br><br>
+
+                                                이미지 클릭 시 해당 사이트로 이동합니다.</p>
+                                        </div>
+                                        <div class='col-sm-6'>
+                                            <a href="./content/rv/POWERUP.html"><img src="images/p_images/sec_work/sec_work_32.png" alt="이미지"></a>
+                                            
+                                        </div>
+
+                                    </div>
+                                
+                                </div>
+                                <div class="modal-footer">
+                                <button type="button" class="btn btn-default" data-dismiss="modal">Close</button>
+                                </div>
+                            </div>
+                            </div>
+                        </div>
+
+                        <!-- li 4-->
+                        <li data-toggle="modal" data-target="#myModal4">
+                            <a id="my-button">
+                                <div>
+                                    <h3>COCO 프로모션</h3>
+                                    <span><strong>WEB Design & Publishing</strong> <br>
+                                                                                
+                                    </span>
+                                </div>
+                               <img src="images/p_images/sec_work/sec_work_4.png" alt="사진">
+                            </a>               
+                        </li>
+
+                        <!-- Modal 4-->
+                        <div class="modal fade" id="myModal4" role="dialog"> <!-- 사용자 지정 부분① : id명 -->
+                            <div class="modal-dialog modal-lg" >
+                            <!-- Modal content-->
+                            <div class="modal-content">
+                                <div class="modal-header">
+                                <button type="button" class="close" data-dismiss="modal">×</button>
+                                <h4 class="modal-title">COCO 프로모션</h4> 
+                                </div>
+                                <div class="modal-body container">
+                                    <div class="row">
+                                        <div class='col-sm-6 con-text'>
+                                            <em>WEB Design & Publishing</em>
+                                            <p>
+                                                2017년에 개봉한 디즈니·픽사의 장편 애니메이션 '코코'를 주제로 한
+                                                프로모션 페이지입니다.<br><br>
+
+                                                '코코'는 멕시코 고유의 명절인 망자의 날을 주제로 한 작품입니다. 제90회 아카데미
+                                                시상식에서 장편 애니메이션상과 주제가상을 동시에 수상하였으며, 전세계는 물론
+                                                국내에서도 350만여명이 관람하며 역대 애니메이션 관객수 9위(2020년 4월 기준)을
+                                                차지하기도 하였습니다.<br><br>
+
+                                                '코코'의 중심이 되는 주제가 4곡을 한 화면에서 만날 수 있도록 배치했습니다.<br><br>
+
+                                                이미지 클릭 시 해당 사이트로 이동합니다.</p>
+                                        </div>
+                                        <div class='col-sm-6 '>
+                                            <a href="./content/coco/coco.html"><img src="images/p_images/sec_work/sec_work_42.png" alt="이미지"></a>
+                                        </div>
+
+                                    </div>
+                                
+                                </div>
+                                <div class="modal-footer">
+                                <button type="button" class="btn btn-default" data-dismiss="modal">Close</button>
+                                </div>
+                            </div>
+                            </div>
+                        </div>
+
+                        <!-- li 5-->
+                        <li data-toggle="modal" data-target="#myModal5">
+                            <a id="my-button">
+                                <div>
+                                    <h3>tiffany & co 리뉴얼</h3>
+                                    <span><strong>WEB Design & Publishing</strong> <br>
+                                                                                
+                                    </span>
+                                </div>
+                               <img src="images/p_images/sec_work/sec_work_5.png" alt="사진">
+                            </a>               
+                        </li>
+
+                        <!-- Modal 5-->
+                        <div class="modal fade" id="myModal5" role="dialog"> <!-- 사용자 지정 부분① : id명 -->
+                            <div class="modal-dialog modal-lg" >
+                            <!-- Modal content-->
+                            <div class="modal-content">
+                                <div class="modal-header">
+                                <button type="button" class="close" data-dismiss="modal">×</button>
+                                <h4 class="modal-title">tiffany & co 리뉴얼</h4> 
+                                </div>
+                                <div class="modal-body container">
+                                    <div class="row">
+                                        <div class='col-sm-6 con-text'>
+                                            <em>WEB Design & Publishing</em>
+                                            <p>
+                                                Tiffany & CO는 그 어느 브랜드보다도 강력한 컬러 마케팅을 가지고 있습니다.
+                                                소위 티파니 블루라 불리는 민트색 계열과 흑백 컬러를 사용해 브랜드의 정체성을
+                                                강조했습니다.<br><br>
+
+                                                주력 라인인 T1을 최상단에 배치하면서도 50주년을 맞은 본 커프와 컬렉션,
+                                                그리고 Tiffany & CO의 사회 활동을 바로 그 아래 배치해 다양한 방식으로 긍정적인
+                                                이미지를 전달하고자 궁리했습니다.<br><br>
+                                                이미지 클릭 시 해당 사이트로 이동합니다.</p>
+                                        </div>
+                                        <div class='col-sm-6 '>
+                                            <a href="./content/tfc/tiffany.html"><img src="images/p_images/sec_work/sec_work_52.png" alt="이미지"></a>
+                                        </div>
+
+                                    </div>
+                                
+                                </div>
+                                <div class="modal-footer">
+                                <button type="button" class="btn btn-default" data-dismiss="modal">Close</button>
+                                </div>
+                            </div>
+                            </div>
+                        </div>
+
+                        <!-- li 6-->
+                        <li data-toggle="modal" data-target="#myModal6">
+                            <a id="my-button">
+                                <div>
+                                    <h3>부실기업 조기진단 <br> 프로젝트</h3>
+                                    <span><strong>Data Analytics & Service Plan</strong> <br>
+                                                                                
+                                    </span>
+                                </div>
+                               <img src="images/p_images/sec_work/sec_work_6.png" alt="사진">
+                            </a>               
+                        </li>
+
+                        <!-- Modal 6-->
+                        <div class="modal fade" id="myModal6" role="dialog"> <!-- 사용자 지정 부분① : id명 -->
+                            <div class="modal-dialog modal-lg" >
+                            <!-- Modal content-->
+                            <div class="modal-content">
+                                <div class="modal-header">
+                                <button type="button" class="close" data-dismiss="modal">×</button>
+                                <h4 class="modal-title">부실기업 조기진단 프로젝트</h4> 
+                                </div>
+                                <div class="modal-body container">
+                                    <div class="row">
+                                        <div class='col-sm-6 con-text'>
+                                            <em>Data Analytics & Service Plan</em>
+                                            <p>
+                                                "데이터를 통해 부실기업 조기진단을 파악할 수는 없을까?" 라는
+                                                가설에서 시작된 팀 프로젝트입니다. 데이터 분석과 이를 제공하는
+                                                서비스를 기획했습니다.<br><br>
+
+                                                먼저 불분명한 부실기업의 기준과 사례를 조사해 특징을 도식화 했습니다.
+                                                또한 전통적인 평가 방식의 한계를 학습하고, 이를 보완하기 위해 비재무적
+                                                데이터를 함께 사용하게 되었습니다.<br><br>
+
+                                                재무적 데이터를 수집하여 부실 징후를 반복 학습하고 채무 상환 능력을
+                                                평가합니다. 나아가 기업 관련 키워드나 대중의 인식, 트렌드를 분석하여
+                                                대시 보드 형태로 제공하고자 합니다. 지속 가능한 경영을 도모해, 당장의
+                                                능력 뿐만 아니라 미래 가치를 반영할 수 있는 모델을 기획하였습니다.<br><br>
+                                                이미지 클릭 시 PDF 파일로 연결됩니다.</p>
+                                        </div>
+                                        <div class='col-sm-6 '>
+                                            <a href="./content/GroupA.pdf"><img src="images/p_images/sec_work/sec_work_62.png" alt="이미지"></a>
+                                        </div>
+
+                                    </div>
+                                
+                                </div>
+                                <div class="modal-footer">
+                                <button type="button" class="btn btn-default" data-dismiss="modal">Close</button>
+                                </div>
+                            </div>
+                            </div>
+                        </div>
+
+                        <!-- li 7-->
+                        <li data-toggle="modal" data-target="#myModal7">
+                            <a id="my-button">
+                                <div>
+                                    <h3>애브리댕 - 반려견 케어</h3>
+                                    <span><strong>APP UI/UX Design</strong> <br>
+                                                                                
+                                    </span>
+                                </div>
+                               <img src="images/p_images/sec_work/sec_work_7.png" alt="사진">
+                            </a>               
+                        </li>
+
+                        <!-- Modal 7-->
+                        <div class="modal fade" id="myModal7" role="dialog"> <!-- 사용자 지정 부분① : id명 -->
+                            <div class="modal-dialog modal-lg" >
+                            <!-- Modal content-->
+                            <div class="modal-content">
+                                <div class="modal-header">
+                                <button type="button" class="close" data-dismiss="modal">×</button>
+                                <h4 class="modal-title">애브리댕 - 반려견 케어</h4> 
+                                </div>
+                                <div class="modal-body container">
+                                    <div class="row">
+                                        <div class='col-sm-6 con-text'>
+                                            <em>APP UI/UX Design</em>
+                                            <p class="cf">
+                                                "반려견 종합 케어 어플"을 주제로 시작된 프로젝트 입니다.<br><br>
+
+                                                처음으로 진행해본 디자인 팀 프로젝트였기에 기획에 오랜 시간을
+                                                쏟았습니다. 첫 구상 단계에서는 단순히 반려견의 산책을 기록하고자
+                                                했으나, 토론 끝에 거쳐 전체적인 건강 관리와 애견인들 사이의 정보
+                                                공유를 위한 커뮤니티, 애견 정보들이 추가되는등 종합적인 케어 어플로
+                                                방향을 잡았습니다.<br><br>
+                                                
+                                                따뜻하면서도 일상적인 느낌을 주고자 메인 컬러와 서브 컬러 모두
+                                                코랄 계열을 사용했습니다.<br><br>
+                                                </p>
+
+                                                <a class="btn" href="./content/everydang1.jpg">Show Web Design 1</a>
+                                                <a class="btn" href="./content/everydang2.jpg">Show Web Design 2</a>
+                                        </div>
+                                        <div class='col-sm-6 '>
+                                            <a><img src="images/p_images/sec_work/sec_work_72.png" alt="이미지"></a>
+                                        </div>
+
+                                    </div>
+                                
+                                </div>
+                                <div class="modal-footer">
+                                <button type="button" class="btn btn-default" data-dismiss="modal">Close</button>
+                                </div>
+                            </div>
+                            </div>
+                        </div>
+
+                        <!-- li 8-->
+                        <li data-toggle="modal" data-target="#myModal8">
+                            <a id="my-button">
+                                <div>
+                                    <h3>경춘선 숲길 프로모션</h3>
+                                    <span><strong>Web Design</strong> <br>
+                                                                                
+                                    </span>
+                                </div>
+                               <img src="images/p_images/sec_work/sec_work_8.png" alt="사진">
+                            </a>               
+                        </li>
+
+                        <!-- Modal 8-->
+                        <div class="modal fade" id="myModal8" role="dialog"> <!-- 사용자 지정 부분① : id명 -->
+                            <div class="modal-dialog modal-lg" >
+                            <!-- Modal content-->
+                            <div class="modal-content">
+                                <div class="modal-header">
+                                <button type="button" class="close" data-dismiss="modal">×</button>
+                                <h4 class="modal-title">경춘선 숲길 프로모션</h4> 
+                                </div>
+                                <div class="modal-body container">
+                                    <div class="row">
+                                        <div class='col-sm-6 con-text'>
+                                            <em>Web Design</em>
+                                            <p>
+                                                2010년에 폐선된 경춘선의 철로 원형이 노원구민들을 위한 공간으로 새롭게
+                                                태어났습니다. 역사적 의미도, 볼거리도 많은 공간을 보다 널리 홍보하고 싶어
+                                                한 눈에 볼 수 있는 이벤트 페이지를 만들게 되었습니다.<br><br>
+
+                                                로고에는 나무를 넣어 숲이라는 느낌이 나도록 디자인했고, 배경 이미지에는 실제로
+                                                경춘선 숲길에 존재하는 시설들(기차와 숲, 폭포, 장미 정원, 그리고 불꽃놀이 등)을
+                                                배치해 경춘선 숲길의 이미지를 전달하고자 했습니다.<br><br>
+
+                                                또한 지루하지 않게 한 페이지를 읽을 수 있도록 강한 배색 대비를 사용하였습니다.<br><br>
+
+
+                                                이미지 클릭 시 상세 페이지로 이동합니다.</p>
+                                                </p>
+ </div>
+                                        <div class='col-sm-6 '>
+                                            <a href="./content/eventpage.jpg"><img src="images/p_images/sec_work/sec_work_82.png" alt="이미지"></a>
+                                        </div>
+
+                                    </div>
+                                
+                                </div>
+                                <div class="modal-footer">
+                                <button type="button" class="btn btn-default" data-dismiss="modal">Close</button>
+                                </div>
+                            </div>
+                            </div>
+                        </div>
+                        
+                        
+                        
+
+                    </ul>
+                </div>
+            </section>
+            <!--3-3. 최근작업영역 끝-->
+            
+        <hr class="m_divider">
+            
+             <!--3-4. 경력작업영역 시작-->
+             <section class="blog_section container">
+                <div class="cf">
+                    <h2 class="sec_title">History</h2>
+                    <ul class="blog_list cf">
+                       
+                        <li>
+                            <a href="#">
+                                <img src="images/p_images/sec_his/sec_his_1.png" alt="이미지01">
+                            </a>
+                            <time datetime="2020-02">2020.02~06</time>
+                            <a>
+                                <h3>
+                                   이젠아카데미 <br> 웹디자인 & 퍼블리싱 수료
+                                </h3>
+                            </a>
+                        </li>
+                        
+                        <li>
+                            <a>
+                               <img src="images/p_images/sec_his/sec_his_2.png" alt="이미지02">
+                            </a>
+                            <time datetime="2020-10">2020.10~2021.06</time>
+                            <a>
+                                <h3>
+                                   (주)Salimist <br> 디자인/웹 부서 근무
+                                </h3>
+                            </a>
+                        </li>
+                        
+                        <li>
+                            <a>
+                               <img src="images/p_images/sec_his/sec_his_3.png" alt="블로그 이미지03">
+                            </a>
+                            <time datetime="2021-08">2021.08~2022.02</time>
+                            <a>
+                                <h3>
+                                    더조은아카데미 <br> 빅데이터분석 & 자바 웹개발 수료
+                                </h3>
+                            </a>
+                        </li>                                                                        
+                    </ul>
+                </div>
+            </section>
+            <!--3-4. 경력작업영역 끝-->
+                                
+        </section>
+        <!--3. 콘텐츠영역 끝-->
+        
+        <!--4. 푸터영역 시작-->
+        <footer class="footer">
+
+            <a name="contact"></a>
+            <p>
+                한계에 좌절하지 않는 개발자가 되고 싶습니다. <br><br><br>
+                
+                당장의 기술로 불가능하다면 새로운 기술을 배우는 것에 주저하지 않겠습니다.<br> <br>
+                개발자는 평생 공부하며 성장하는 직업이라고 합니다. 가지고 있는 것에
+                만족하는 대신 늘 발전해나가는 모습을 보이겠습니다.
+            </p>
+            <ul class="sns">
+                <li><a href="mailto:pirralet@gmail.com" target="_blank"><i class="fa fa-envelope" aria-hidden="true"></i></a></li>
+                <li><a href="https://www.instagram.com/blenty_/" target="_blank"><i class="fa fa-instagram" aria-hidden="true"></i></a></li>
+                <li><a href="https://open.kakao.com/o/sD1korhc" target="_blank"><i class="fa fa-commenting" aria-hidden="true"></i></a></li>
+            </ul>
+            <p>
+                COPYRIGHT ©2022 J ALL RIGHTS RESERVED
+            </p>
+        </footer>
+        <!--4. 푸터영역 끝-->
+    </div>
+</body>
+</html>
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+

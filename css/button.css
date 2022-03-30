@@ -1,0 +1,70 @@
+/* 모달 */
+.modal {
+    text-align: center;
+  }
+
+.modal:before {
+  display: inline-block;
+  vertical-align: middle;
+  content: " ";
+  height: 100%;
+}
+
+  .modal-dialog {
+    display: inline-block;
+    text-align: left;
+    vertical-align: middle;
+  }
+  .modal-body img {
+      width: 100%;
+  }
+  .modal-body p {
+      margin-top: 20px;
+      font-size: 16px;
+  }
+
+.modal-title {
+  font-size: 24px;
+	font-weight: 800;
+  font-family: 'Montserrat', 'Nanum Gothic', sans-serif;
+}
+
+.con-text {
+  padding: 20px;
+}
+
+.con-text em{
+  font-size: 22px;
+	font-weight: 600;
+	font-style: normal;
+	color: #616161;
+  font-family: 'Montserrat', 'Nanum Gothic', sans-serif;
+  line-height: 40px;
+}
+
+.con-text p {
+  font-size: 16px;
+  font-family: 'Nanum Gothic', sans-serif;
+  font-weight: normal;
+  line-height: 1.5em;
+
+}
+
+.col-sm-6 a img {
+  margin-top: 20px;
+}
+
+.con-text .btn {
+  width: 160px;
+	float: left;
+  background: #EA4E4A;
+  color: #fff;
+	margin-right: 20px;
+}
+
+@media screen and (min-width:1132px){
+  .modal-lg {
+    width: 1200px;
+    vertical-align: middle;
+  }
+}

@@ -1,0 +1,764 @@
+@charset "utf-8";
+
+
+
+
+
+/*공통 CSS*/
+/*클리어픽스 : 플롯해제 클래스*/
+
+a {
+    text-decoration-line: none !important;
+}
+.cf:after {
+    content: "";
+    display: block;
+    clear: both;
+}
+/*모든 환경에 보이지는 않지만, 반드시 입력 해야하는html태그가 존재함.
+해당 요소를 숨기기 위해 클래스 제작*/
+.blind {
+    position: absolute;
+    width: 0;
+    height: 0;
+    line-height: 0;
+    text-indent: -9999px;
+    overflow: hidden;
+}
+/*지정 너비로만 사용하게 하는 클래스*/
+.container {
+    width: 1132px;
+    width: 90%;
+    max-width: 1132px;
+    margin: 0 auto;
+}
+/*제목 스타일*/
+.sec_title {
+    font-size: 42px;
+    color: #07344E;
+    font-weight: normal;
+	font-family: 'Montserrat', 'Nanum Gothic', sans-serif;
+	text-align: left;
+}
+/*구분선 영역 스타일*/
+.divider {
+    width: 90%;
+    max-width: 1132px;
+    margin: 0 auto;
+    margin-top: 80px;
+    background: #eee;
+}
+.m_divider {
+    width: 20px;
+    margin: 0 auto;
+    margin-top: 80px;
+    background: #07344E;
+}
+
+body {
+	font-family: 'Nanum Gothic', sans-serif;
+}
+
+
+
+/*모바일용 미디어쿼리 없음(공통스타일로 사용)*/
+/*1. 헤더영역 CSS*/
+.header {
+	margin: 0 auto;
+	width: 100%;
+    padding: 18px 5%;
+    /*위치기준값*/
+    position: relative;
+}
+/*로고영역*/
+.header .logo {
+    /*플롯*/
+    float: left;
+    font-size: 30px;
+    font-weight: 800;
+    font-family: 'Montserrat', 'Nanum Gothic', sans-serif;
+	
+
+}
+.header .logo a {
+    font-size: 26px;
+    color: #07344E;
+}
+/*gnb영역*/
+.header nav {}
+/*모바일 영역 gnb메뉴*/
+.header .gnb {
+    /*스크립트 연동을 위해 로딩시 가려줌*/
+    display: none;
+    width: 100%;
+    /*포지션*/
+    position: absolute;
+    left: 0;
+    top: 100%;
+    background: white;
+	font-family: 'Montserrat', 'Nanum Gothic', sans-serif;
+	/*margin-top: 10px;*/
+	z-index: 99999;
+    margin-top: 10px;
+}
+.header .gnb li {
+    border-bottom: 1px dashed #303f9f;
+}
+.header .gnb li:nth-child(4) {
+	border-bottom: none;
+}
+/*모바일 메뉴 CSS*/
+.header .gnb li a {
+    display: block;
+    font-size: 14px;
+    padding: 14px 0 14px 5%;
+}
+
+/*햄버거메뉴 CSS*/
+.header .menu_toggle_btn {
+    width: 20px;
+    margin-top: 4px;
+    cursor: pointer;
+    /*플롯*/
+    float: right;
+}
+/*햄버거메뉴 바 CSS*/
+.header .menu_toggle_btn span {
+    display: block;
+    width: 100%;
+    height: 2px;
+    background: #07344E;
+    
+}
+.header .menu_toggle_btn span:nth-child(2){
+    margin: 5px 0;
+}
+
+/*2. 슬라이드영역  수정중*/
+
+.slider_img {
+	
+	width: 100%;
+}
+.slider_img img {
+	width: 100%
+}
+
+
+/*3-1. 디스플레이영역*/
+.display_section {
+    margin-top: 60px;
+    text-align: center;
+}
+.display_section .sec_title {
+    margin-bottom: 30px;
+}
+.display_section .desc {
+    color: #616161;
+    line-height: 2;
+}
+
+/*3-2. 프로모션영역*/
+.promotion_section {
+    margin-top: 68px;
+}
+.promotion_section .promotion_list li {
+    margin-top: 50px;
+    text-align: center;
+}
+.promotion_section .promotion_list li:nth-child(1){
+    margin-top: 0;
+}
+.promotion_section .promotion_list li img {
+    height: 52px;
+}
+.promotion_section .promotion_list li h3 {
+    margin: 30px 0 20px;
+    font-size: 20px;
+    font-weight: 600;
+    color: #07344E;
+	font-family: 'Montserrat', 'Nanum Gothic', sans-serif;
+}
+.promotion_section .promotion_list li p {
+    font-size: 16px;
+    color: #616161;
+    line-height: 1.5;
+}
+
+/*3-3. 최근작업영역*/
+.work_section {
+    margin-top: 74px;
+}
+.work_section .sec_title {
+    width: 90%;
+    margin: 0 auto;
+    text-align: center;
+    margin-bottom: 48px;
+}
+.work_section .work_list li {
+    width: 100%;
+}
+.work_section .work_list li a {
+    display: block;
+    width: 100%;
+    height: 100%;
+}
+.work_section .work_list li img {
+    max-width: 100%;
+    width: 100%;
+}
+
+/*3-4. 블로그작업영역*/
+.blog_section {
+    margin-top: 80px;
+}
+.blog_section .sec_title {
+    margin-bottom: 48px;
+    text-align: center;
+}
+.blog_section .blog_list li {
+    margin-top: 48px;
+    width: 100%;
+}
+.blog_section .blog_list li:nth-child(1){
+    margin-top: 0;
+}
+.blog_section .blog_list li img {
+    max-width: 100%;
+    width: 100%;
+}
+.blog_section .blog_list li time {
+    display: block;
+    font-size: 12px;
+    color: #9e9e9e;
+    margin: 10px 0;
+}
+.blog_section .blog_list li h3 {
+    color: #424242;
+    line-height: 1.6;
+}
+
+/*3-5. 연락처작업영역*/
+.contact_section {
+    margin-top: 100px;
+}
+.contact_section .sec_title {
+    margin-bottom: 48px;
+    text-align: center;
+}
+/*input요소 CSS*/
+.contact_section .form_box .form input {
+    padding-bottom: 14px;
+    margin-bottom: 40px;
+}
+.contact_section .form_box .textarea textarea {
+    height: 170px;
+}
+.contact_section .form_box .send_btn {
+    margin-top: 36px;
+    text-align: right;
+}
+.contact_section .form_box .send_btn button {
+    font-size: 12px;
+    color: #fff;
+    background: #07344E;
+    font-family: 'Montserrat';
+    padding: 15px;
+    border: 0;
+    cursor: pointer;
+}
+
+/*4. 푸터영역*/
+.footer {
+    margin-top: 100px;
+    background: #242424;
+    color: #fff;
+}
+.footer p {
+    padding: 50px 0;
+    text-align: center;
+}
+.footer .sns {
+    text-align: center;
+    align-items: center
+}
+.footer .sns li {
+    font-size: 40px;
+    display: inline-block;
+	margin-right: 24px;
+}
+
+
+
+/*CSS3 트랜지션 애니메이션 효과내기 시작*/
+
+.work_section .work_list li a {
+	position: relative;
+	
+}
+/*셀로판지 효과*/
+.work_section .work_list li a:before {
+	width: 100%;
+	height: 100%;
+	display: block;
+	content: "";
+	background: #07344E;
+	position: absolute;
+	left: 0;
+	top: 0;
+	z-index: 100;
+	opacity: 0;
+	/*트랜지션*/
+	-webkit-transition: all 0.3s;
+	-moz-transition: all 0.3s;
+	transition: all 0.3s;
+}
+
+.work_section .work_list li a:hover:before {
+	opacity: 0.8;
+}
+
+/*정보 박스 영역*/
+.work_section .work_list li div {
+	position: absolute;
+	left: 30px;
+	top: 0;
+	z-index: 200;
+	opacity: 0;
+	-webkit-transition: all 0.3s;
+	-moz-transition: all 0.3s;
+	transition: all 0.3s;
+}
+.work_section .work_list li a:hover div {
+	opacity: 1;
+	-webkit-transform: translateY(30px);
+	-moz-transform: translateY(30px);
+	transform: translateY(30px);
+}
+.work_section .work_list li div h3 {
+	font-size: 24px;
+	color: #fff;
+	margin-bottom: 8px;
+}
+.work_section .work_list li div span {
+	font-size: 12px;
+	color: #fff;
+}
+
+
+/*CSS3 트랜지션 애니메이션 효과내기 끝*/
+
+
+
+/*태블릿용 미디어쿼리 768px이상*/
+@media screen and (min-width:768px){
+    
+    /*1. 헤더영역 CSS*/
+    .header {
+        padding: 18px 5%;
+    /*위치기준 (수정)*/
+        position: static;
+    }
+    /*로고영역*/
+    .header .logo {
+        /*플롯*/
+        float: left;
+    }
+    .header .logo a {
+        font-size: 26px;
+        color: #07344E;
+    }
+    /*gnb영역*/
+    .header nav {}
+    /*태블릿 영역 gnb메뉴*/
+    .header .gnb {
+        /*태블릿 gnb메뉴 로딩시 보여줌 (수정)*/
+        display: block !important;
+        width: auto;
+    /*포지션 삭제 (수정)*/
+        position: static;
+    /*배경색 (수정)*/
+        background: none;
+        /*플롯*/
+        float: right;
+    }
+    .header .gnb li {
+        margin-left: 20px;
+        border-bottom: 0;
+        /*플롯*/
+        float: left;
+    }
+    /*모바일 메뉴 CSS*/
+    .header .gnb li a {
+        display: block;
+        font-size: 16px;
+        padding: 0;
+    }
+
+    /*햄버거메뉴 CSS*/
+    .header .menu_toggle_btn {
+        display: none;
+    }   
+
+    /*3-1. 디스플레이영역*/
+    .display_section {
+    /*값(수정)*/
+        margin-top: 100px;
+        text-align: center;
+    }
+    .display_section .sec_title {
+        margin-bottom: 30px;
+    }
+    .display_section .desc {
+        color: #616161;
+        line-height: 2;
+    }
+    
+    
+    /*3-2. 프로모션영역*/
+    .promotion_section {
+    /*값(수정)*/
+        margin-top: 110px;
+    }
+    .promotion_section .promotion_list li {
+        /*(177/768)*100*/
+        width: 177px;
+        width: 23.046875%;
+        /*(20/768)*100*/
+        margin-left: 20px;
+        margin-left: 2.604166666666667%;
+    /*값(수정)*/
+        margin-top: 0;
+        text-align: center;
+        /*플롯*/
+        float: left;
+    }
+    .promotion_section .promotion_list li:nth-child(1){
+        margin-left: 0;
+    }
+/*    .promotion_section .promotion_list li img {
+        height: 52px;
+    }
+    .promotion_section .promotion_list li h3 {
+        margin: 30px 0 20px;
+        color: #07344E;
+    }
+    .promotion_section .promotion_list li p {
+        font-size: 14px;
+        color: #616161;
+        line-height: 1.5;
+        font-family: 'PT Serif', serif;
+    }*/    
+    
+    /*3-3. 최근작업영역*/
+    .work_section {
+    /*값 (수정)*/    
+        margin-top: 100px;
+    }
+    .work_section .sec_title {
+        width: 90%;
+        margin: 0 auto;
+        text-align: center;
+    /*값 (수정)*/    
+        margin-bottom: 80px;
+    }
+    .work_section .work_list li {
+        width: 50%;
+        /*플롯*/
+        float: left;
+    }
+    .work_section .work_list li a {
+        display: block;
+        width: 100%;
+        height: 100%;
+    }
+    .work_section .work_list li img {
+        max-width: 100%;
+        width: 100%;
+    }
+    
+    /*3-4. 블로그작업영역*/
+    .blog_section {
+    /*값 (수정)*/    
+        margin-top: 124px;
+    }
+    .blog_section .sec_title {
+        margin-bottom: 48px;
+        text-align: center;
+    }
+    .blog_section .blog_list li {
+    /*값 (수정)*/    
+        margin-top: 0;
+        /*(242.6666666666667/768)*/
+        width: 242.6666666666667px;
+        width: 31.59722222222222%;
+        /*(20/768)*/
+        margin-left: 20px;
+        margin-left: 2.604166666666667%;
+        /*플롯*/
+        float: left;
+    }
+    .blog_section .blog_list li:nth-child(1){
+        margin-left: 0;
+    }
+    .blog_section .blog_list li img {
+        max-width: 100%;
+        width: 100%;
+    }
+    .blog_section .blog_list li time {
+        display: block;
+        font-size: 12px;
+        color: #9e9e9e;
+        margin: 10px 0;
+    }
+    .blog_section .blog_list li h3 {
+        color: #424242;
+        line-height: 1.6;
+    }    
+    
+    
+    /*3-5. 연락처작업영역*/
+    .contact_section {
+    /*값 (수정)*/
+        margin-top: 180px;
+    }
+    .contact_section .sec_title {
+    /*값 (수정)*/
+        margin-bottom: 80px;
+        /*text-align: center;*/
+    }
+    /*input요소 CSS*/
+    /*클래스 추가*/
+    .contact_section .form_box .form {
+        width: 374px;
+        /*(374/768)*/
+        width: 48.69791666666667%;
+        /*플롯*/
+        float: left;
+    }
+    /*클래스 추가*/
+    .contact_section .form_box .textarea {
+        width: 374px;
+        /*(374/768)*/
+        width: 48.69791666666667%;
+        /*플롯*/
+        float: left;
+    }
+    /*폼간 마진설정*/
+    .contact_section .form_box .form {
+        margin-right: 20px;
+        /*(20/768)*/
+        margin-right: 2.604166666666667%;
+    }
+    
+    .contact_section .form_box .form input {
+        padding-bottom: 14px;
+        margin-bottom: 40px;
+    }
+    .contact_section .form_box .textarea textarea {
+        height: 170px;
+    }
+    .contact_section .form_box .send_btn {
+        margin-top: 36px;
+        text-align: right;
+    }
+    .contact_section .form_box .send_btn button {
+        font-size: 12px;
+        color: #fff;
+        background: #07344E;
+        font-family: 'Montserrat';
+        padding: 15px;
+        border: 0;
+        cursor: pointer;
+    }
+    
+    
+    
+    
+    
+    
+    
+}
+
+
+
+
+
+/*PC용 미디어쿼리 1132px이상*/
+@media screen and (min-width:1132px){
+	
+    .header {
+        position: fixed;
+        top: 0;
+        background: #fff;
+        box-shadow: 0 8px 8px -8px #bbb;
+        z-index: 999;
+    }
+
+	
+    /*3-1. 디스플레이영역*/
+    .display_section {
+    /*값(수정)*/
+        margin-top: 100px;
+        text-align: left;
+    }
+    .display_section .sec_title {
+        margin-bottom: 0;
+        /*플롯*/
+        float: left;
+    }
+    .display_section .desc {
+        color: #616161;
+        line-height: 2;
+    /*추가 (수정)*/
+        padding-left: 20px;
+        /*플롯*/
+        float: right;
+        /*세로선 위치기준값*/
+        position: relative;
+    }
+    
+    /*데코레이션 세로선*/
+    .display_section .desc:before {
+        display: block;
+        width: 2px;
+        height: 110px;
+        background: #e0e0e0;
+        content: "";
+        /*포지션*/
+        position: absolute;
+        left: 0;
+        top: 10px;
+    }
+    
+    /*3-2. 프로모션영역*/
+    .promotion_section {
+    /*값(수정)*/
+        margin-top: 110px;
+    }
+    .promotion_section .promotion_list li {
+        /*(268/1132)*100*/
+        width: 268px;
+        width: 23.67491166077739%;
+        /*(20/1132)*100*/
+        margin-left: 20px;
+        margin-left: 1.76678445229682%;
+    /*값(수정)*/
+        margin-top: 0;
+        text-align: center;
+        /*플롯*/
+        float: left;
+    }
+    .promotion_section .promotion_list li:nth-child(1){
+        margin-left: 0;
+    }
+    
+    /*3-3. 최근작업영역*/
+    .work_section {   
+        margin-top: 100px;
+    }
+    .work_section .sec_title {
+        /*width: 90%;*/
+        margin: 0 auto;
+    /*값 (수정)*/    
+        text-align: left;   
+        margin-bottom: 80px;
+		float: left;
+    }
+    .work_section .work_list li {
+        width: 25%;
+        /*플롯*/
+        float: left;
+    }
+    .work_section .work_list li a {
+        display: block;
+        width: 100%;
+        height: 100%;
+    }
+    .work_section .work_list li img {
+        max-width: 100%;
+        width: 100%;
+    } 
+    
+    
+    /*3-4. 블로그작업영역*/
+    .blog_section {
+        margin-top: 124px;
+    }
+    .blog_section .sec_title {
+    /*값 (수정)*/
+        margin-bottom: 0;
+        /*width: 288px;*/
+        /*플롯*/
+        float: left;
+ 
+    }
+    /*클래스 추가*/
+    .blog_section .blog_list {
+        /*(844/1132)*/
+        width: 844px;
+        width: 74.5583038869258%;
+        /*플롯*/
+        float: right;
+    }
+    
+    
+    .blog_section .blog_list li {
+    /*값 (수정)*/    
+        margin-top: 0;
+        /*(268/844)*/
+        width: 268px;
+        width: 31.75355450236967%;
+        /*(20/844)*/
+        margin-left: 20px;
+        margin-left: 2.369668246445498%;
+        /*플롯*/
+        float: left;
+    }
+    .blog_section .blog_list li:nth-child(1){
+        margin-left: 0;
+    }
+    .blog_section .blog_list li img {
+        border: 1px solid #bdbdbd;
+        max-width: 100%;
+        width: 100%;
+    }
+    .blog_section .blog_list li time {
+        display: block;
+        font-size: 12px;
+        color: #9e9e9e;
+        margin: 10px 0;
+    }
+    .blog_section .blog_list li h3 {
+        color: #424242;
+        line-height: 1.6;
+    }        
+    
+        
+
+}
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+

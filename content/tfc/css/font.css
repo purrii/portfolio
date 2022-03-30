@@ -1,0 +1,99 @@
+@charset "utf-8";
+
+@import url('https://fonts.googleapis.com/css?family=Bungee&display=swap');
+@import url('https://fonts.googleapis.com/css?family=ZCOOL+KuaiLe&display=swap');
+@import url('https://fonts.googleapis.com/css?family=Yellowtail&display=swap');
+@import url('https://fonts.googleapis.com/css?family=Jua&display=swap');
+@import url('https://fonts.googleapis.com/css?family=Roboto&display=swap');
+@import url('https://fonts.googleapis.com/css?family=Oxanium&display=swap');
+@import url('https://fonts.googleapis.com/css?family=Trade+Winds&display=swap');
+@import url('https://fonts.googleapis.com/css?family=Anton&display=swap');
+@import url('https://fonts.googleapis.com/css?family=Black+Han+Sans&display=swap');
+@import url('https://fonts.googleapis.com/css?family=Bowlby+One+SC&display=swap');
+@import url('https://fonts.googleapis.com/css?family=Lato&display=swap');
+@import url('https://fonts.googleapis.com/css?family=Montserrat&display=swap');
+@import url('https://fonts.googleapis.com/css?family=Nanum+Brush+Script&display=swap');
+@import url('https://fonts.googleapis.com/css?family=Nanum+Gothic&display=swap');
+@import url('https://fonts.googleapis.com/css?family=Nanum+Gothic+Coding&display=swap');
+@import url('https://fonts.googleapis.com/css?family=Noto+Sans+KR&display=swap');
+@import url('https://fonts.googleapis.com/css?family=Noto+Serif&display=swap');
+@import url('https://fonts.googleapis.com/css?family=Open+Sans&display=swap');
+@import url('https://fonts.googleapis.com/css?family=Oswald&display=swap');
+@import url('https://fonts.googleapis.com/css?family=PT+Sans&display=swap');
+@import url('https://fonts.googleapis.com/css?family=PT+Sans+Caption&display=swap');
+@import url('https://fonts.googleapis.com/css?family=PT+Serif&display=swap');
+@import url('https://fonts.googleapis.com/css?family=Permanent+Marker&display=swap');
+@import url('https://fonts.googleapis.com/css?family=Sunflower:300&display=swap');
+@import url('https://fonts.googleapis.com/css?family=Titillium+Web&display=swap');
+@import url('https://fonts.googleapis.com/css?family=Amatic+SC&display=swap');
+@import url('https://fonts.googleapis.com/css?family=Indie+Flower&display=swap');
+@import url('https://fonts.googleapis.com/css?family=Karla&display=swap');
+@import url('https://fonts.googleapis.com/css?family=Lacquer&display=swap');
+@import url('https://fonts.googleapis.com/css?family=Nanum+Pen+Script&display=swap');
+@import url('https://fonts.googleapis.com/css?family=Pacifico&display=swap');
+@import url('https://fonts.googleapis.com/css?family=Righteous&display=swap');
+@import url('https://fonts.googleapis.com/css?family=Signika&display=swap');
+@import url('https://fonts.googleapis.com/css?family=Bangers&display=swap');
+@import url('https://fonts.googleapis.com/css?family=Damion&display=swap');
+@import url('https://fonts.googleapis.com/css?family=Fredoka+One&display=swap');
+@import url('https://fonts.googleapis.com/css?family=Gloria+Hallelujah&display=swap');
+@import url('https://fonts.googleapis.com/css?family=Gochi+Hand&display=swap');
+@import url('https://fonts.googleapis.com/css?family=Josefin+Slab&display=swap');
+@import url('https://fonts.googleapis.com/css?family=Kaushan+Script&display=swap');
+@import url('https://fonts.googleapis.com/css?family=Marck+Script&display=swap');
+@import url('https://fonts.googleapis.com/css?family=Monoton&display=swap');
+@import url('https://fonts.googleapis.com/css?family=Rajdhani&display=swap');
+@import url('https://fonts.googleapis.com/css?family=Sacramento&display=swap');
+@import url('https://fonts.googleapis.com/css?family=Sigmar+One&display=swap');
+@import url('https://fonts.googleapis.com/css2?family=Lalezar&display=swap');
+@import url('https://fonts.googleapis.com/css2?family=Anton&display=swap');
+@import url('https://fonts.googleapis.com/css2?family=Libre+Baskerville&display=swap');
+
+.libre {font-family: 'Libre Baskerville', serif;}
+.bungee {font-family: 'Bungee', cursive;}
+.zcool {font-family: 'ZCOOL KuaiLe', cursive;}
+.yellowtail {font-family: 'Yellowtail', cursive;}
+.jua {font-family: 'Jua', sans-serif;}
+.roboto {font-family: 'Roboto',sans-serif;}
+.oxanium {font-family: 'Oxanium',sans-serif;}
+.tradewind {font-family: 'Trade Winds',sans-serif;}
+.opensans {font-family: 'Open Sans', sans-serif;}
+.ngothic {font-family: 'Nanum Gothic', sans-serif;}
+.notosans {font-family: 'Noto Sans KR', sans-serif;}
+.lato {font-family: 'Lato', sans-serif;}
+.monser {font-family: 'Montserrat', sans-serif;}
+.ngothiccoding {font-family: 'Nanum Gothic Coding', sans-serif;}
+.oswald {font-family: 'Oswald', sans-serif;}
+.notoserif {font-family: 'Noto Serif', sans-serif;}
+.ptsans {font-family: 'PT Sans', sans-serif;}
+.ttweb {font-family: 'Titillium Web', sans-serif;}
+.ptserif {font-family: 'PT Serif', sans-serif;}
+.anton {font-family: 'Anton', sans-serif;}
+.sunflower {font-family: 'Sunflower', sans-serif;}
+.marker {font-family: 'Permanent Marker', sans-serif;}
+.bowlby {font-family: 'Bowlby One SC', sans-serif;}
+.blacksans {font-family: 'Black Han Sans', sans-serif;}
+.nbrush {font-family: 'Nanum Brush Script', sans-serif;}
+.ptsanscaption {font-family: 'PT Sans Caption', sans-serif;}
+.lacquer {font-family: 'Lacquer', sans-serif;}
+.npenscript {font-family: 'Nanum Pen Script', sans-serif;}
+.karla {font-family: 'Karla', sans-serif;}
+.indieflower {font-family: 'Indie Flower', sans-serif;}
+.pacifico {font-family: 'Pacifico', sans-serif;}
+.righteous {font-family: 'Righteous', sans-serif;}
+.signika {font-family: 'Signika', sans-serif;}
+.amatic {font-family: 'Amatic SC', sans-serif;}
+.fredoka {font-family: 'Fredoka One', sans-serif;}
+.raj {font-family: 'Rajdhani', sans-serif;}
+.kaushan {font-family: 'Kaushan Script', sans-serif;}
+.sacra {font-family: 'Sacramento', sans-serif;}
+.gloria {font-family: 'Gloria Hallelujah', sans-serif;}
+.josefin {font-family: 'Josefin Slab', sans-serif;}
+.bangers {font-family: 'Bangers', sans-serif;}
+.monoton {font-family: 'Monoton', sans-serif;}
+.damion {font-family: 'Damion', sans-serif;}
+.sigmar {font-family: 'Sigmar One', sans-serif;}
+.marck {font-family: 'Marck Script', sans-serif;}
+.gochi {font-family: 'Gochi Hand', sans-serif;}
+.lalezar {font-family: 'Lalezar', cursive;}
+.anton {font-family: 'Anton', sans-serif;}
